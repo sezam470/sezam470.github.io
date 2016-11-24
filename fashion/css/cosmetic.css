@@ -1,0 +1,113 @@
+
+/* Header-1 
+-----------------------------------------------------------------------------*/
+.callme{
+	width: 144px;
+	font-family: "Raleway","Times New Roman","Arial";
+	font-size: 14px;
+	line-height: 15px;
+}
+
+.currency .text{
+	margin-top:0;
+	margin-left: -4px;
+	font-size: 14px;
+	line-height: 15px;
+}
+
+.language .text{
+	margin-top: 21px;
+	font-size: 14px;
+	line-height: 15px;
+}
+
+.logo a{
+	margin-top: 32px;
+	margin-left: 1px;
+	color: rgb(0,216,229);
+	text-decoration: none;
+	line-height: 41px;
+}
+
+.watchgoods{
+	
+}
+
+.addblock_enter{
+	background-color: rgb(0,216,229);
+}
+
+/* Content-1
+-----------------------------------------------------------------------------*/
+
+.slide3 .title{
+	top: 242px;
+	left: 700px;
+	line-height: 80px;
+}
+
+.slide3 .text1{
+	top: 428px;
+	left: 706px;
+}
+
+.slide3 .text2{
+	top: 468px;
+	left: 705px;
+}
+
+.slide3 a{
+	top: 485px;
+	left: 705px;
+}
+
+/* Content-3
+-----------------------------------------------------------------------------*/
+
+.new_bottom{
+	top: 22px;
+	left: 244px;
+	line-height: 17px;
+}
+
+.sale_bottom{
+	top: 12px;
+	left: 12px;
+	line-height: 13px;
+}
+
+.new_2{
+	background-image: url("/fashion/img/sprite.png");
+	background-position: 0 -1170px;
+}
+
+.box4 .addlayer{
+	margin-left: 2px;
+}
+
+.addlayer2{
+	height: 286px;
+}
+
+.slide2{
+	display: none;
+	float: left;
+}
+
+.slide3{
+	display: none;
+	float: left;
+}
+
+.slide4{
+	display: none;
+	float: left;
+}
+
+/* Footer */
+
+.amex{
+	width: 41px;
+	background-position: 0 -1792px;
+}
+

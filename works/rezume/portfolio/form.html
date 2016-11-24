@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Форма</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style>
+		.workplace{
+			width: 940px;
+			margin: 40px auto;
+		}
+		.form-part--left{
+			float: left;
+			background-color: rgb(213,255,206);
+		}
+	</style>
+</head>
+<body>
+
+<div class="workplace">
+		<h1>Регистрация кошки</h1>
+		<form action="/assets/php/form.php" name="siteform" method="post">
+			<div class="form-part--left">
+			
+				<legend>Имя</legend>
+				<input type="text" name="name" required placeholder="Введите имя кошки">
+				
+				<legend>Порода</legend>
+				<input name="breed" list="breeds" placeholder="Введите породу">
+				<datalist id="breeds">
+					<option value="Дворовая">
+					<option value="Британская короткошерстная">
+					<option value="Египетская пучеглазая">
+				</datalist>
+				
+				<legend>Ветеринарный ID (10 цифр)</legend>
+				<input type="text" name="vetid" required inputmode="numeric" pattern="[0-9]{10}" placeholder="Введите ID">
+				
+				<legend>Характер</legend>
+				<input type="checkbox" name="um"><span>Умная</span>
+				<input type="checkbox" name="dob" checked><span>Добрая</span>
+				<input type="checkbox" name="est"><span>Мало ест</span>
+				
+				<legend>Цвет</legend>
+				<input type="color" name="color">
+				<legend>Тип</legend>
+				<input type="radio" name="type" value="lys"><span>Лысая</span>
+				<input type="radio" name="type" value="malo" checked><span>Короткошерстная</span>
+				<input type="radio" name="type" value="push"><span>Пушистая</span>
+			</div>
+			<div class="form-part--right">
+			
+				<legend>Описание</legend>
+				<textarea name="descr" readonly>Моя кошка - лучшая!</textarea>
+				
+				<legend>Фотография</legend>
+				<input type="file" name="image" >
+				
+				<legend>Телефон</legend>
+				<input name="tel" required type="tel" placeholder="+7 xxx-xxx-xx-xx">
+				
+				<legend>Пароль</legend>
+				<input type="password" name="pass" autocomplete="off">
+				<button name="submitButton" type="submit">Отправить</button>
+				<button type="reset" disabled>Сбросить</button>
+				
+			</div>
+		</form>
+		
+</div>
+</html>

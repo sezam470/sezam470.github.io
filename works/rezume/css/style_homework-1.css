@@ -1,0 +1,20 @@
+.cont-margin{
+	margin-top: 20px;
+}
+
+.green{
+	background-color: #b5e61d;
+}
+		
+.orange{
+	background-color: #ff7f27;
+}
+
+.s_border{
+	border: 2px solid black;
+}
+		
+.square{
+	border: 2px solid black;
+	height: 300px;
+}

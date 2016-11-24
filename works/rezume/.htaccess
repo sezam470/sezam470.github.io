@@ -1,0 +1,6 @@
+ErrorDocument 404 http://zlydnevaas.pa.infobox.ru/404.html
+
+ 
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www.zlydnevaas.pa.infobox.ru
+RewriteRule (.*) http://zlydnevaas.pa.infobox.ru/$1 [R=301,L]

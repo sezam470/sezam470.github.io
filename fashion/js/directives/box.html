@@ -1,0 +1,23 @@
+<div class='img'>
+	<img src={{i.img}}></img>
+	<div class='box_hover'>
+		<div class='addlayer'></div>
+		<a class='square add' ng-class='{"add_to_cart_done":i.addCart}' ng-click='disableClick_cart($index)' ng-disabled='i.isDisabled_cart'><div class='add_cart_layer'></div></a>
+		<a class='square favor' ng-class='{"add_to_cart_done":i.addWish}' ng-click='disableClick_wish($index)' ng-disabled='i.isDisabled_wish'><div class='add_favor'></div></a>
+	</div>
+</div>
+<div class='sale'>SALE</div>
+<div class='new' ng-show='i.new_sticker'>NEW</div>
+<div class='new new_2' ng-show='i.new_sticker2'>NEW</div>
+<div class='text'>
+	<a href={{i.href}} class='title'>{{i.name}}</a>
+	<div class='price'>{{i.price}}</div>
+	<div class='clear'></div>
+	<div class='stars'>
+		<div class='star star_yes'></div>
+		<div class='star star_yes'></div>
+		<div class='star star_yes'></div>
+		<div class='star star_yes'></div>
+		<div class='star star_yes'></div>
+	</div>
+</div>

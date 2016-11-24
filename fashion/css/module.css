@@ -1,0 +1,3242 @@
+@font-face {
+    font-family: "GIL";
+    src: url('/fashion/fonts/gil.eot');
+    src: url('/fashion/fonts/gil.eot?#iefix') format('embedded-opentype'),
+         url('/fashion/fonts/gil.woff2') format('woff2'),
+         url('/fashion/fonts/gil.woff') format('woff'),
+         url('/fashion/fonts/gil.ttf') format('truetype'),
+         url('/fashion/fonts/gil.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GILBOLD";
+    src: url('/fashion/fonts/gilbold.eot');
+    src: url('/fashion/fonts/gilbold.eot?#iefix') format('embedded-opentype'),
+         url('/fashion/fonts/gilbold.woff2') format('woff2'),
+         url('/fashion/fonts/gilbold.woff') format('woff'),
+         url('/fashion/fonts/gilbold.ttf') format('truetype'),
+         url('/fashion/fonts/gilbold.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url('/fashion/fonts/raleway-regular-webfont.eot');
+    src: url('/fashion/fonts/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fashion/fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('/fashion/fonts/raleway-regular-webfont.woff') format('woff'),
+         url('/fashion/fonts/raleway-regular-webfont.ttf') format('truetype'),
+         url('/fashion/fonts/raleway-regular-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: "PacificoReg";
+    src: url('/fashion/fonts/pacif_reg.eot');
+    src: url('/fashion/fonts/pacif_reg.eot?#iefix') format('embedded-opentype'),
+         url('/fashion/fonts/pacif_reg.woff2') format('woff2'),
+         url('/fashion/fonts/pacif_reg.woff') format('woff'),
+         url('/fashion/fonts/pacif_reg.ttf') format('truetype'),
+         url('/fashion/fonts/pacif_reg.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face{
+	font-family: "Kalinga";
+	src: url('/fashion/fonts/kalinga.eot');
+    src: url('/fashion/fonts/kalinga.eot?#iefix') format('embedded-opentype'),
+         url('/fashion/fonts/kalinga.woff2') format('woff2'),
+         url('/fashion/fonts/kalinga.woff') format('woff'),
+         url('/fashion/fonts/kalinga.ttf') format('truetype'),
+         url('/fashion/fonts/kalinga.svg#nexa_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face{
+	font-family: "KalingaBold";
+	src: url('/fashion/fonts/kalingabold.eot');
+    src: url('/fashion/fonts/kalingabold.eot?#iefix') format('embedded-opentype'),
+         url('/fashion/fonts/kalingabold.woff2') format('woff2'),
+         url('/fashion/fonts/kalingabold.woff') format('woff'),
+         url('/fashion/fonts/kalingabold.ttf') format('truetype'),
+         url('/fashion/fonts/kalingabold.svg#nexa_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: "Nexa";
+    src: url('/fashion/fonts/nexa_light-webfont.eot');
+    src: url('/fashion/fonts/nexa_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fashion/fonts/nexa_light-webfont.woff2') format('woff2'),
+         url('/fashion/fonts/nexa_light-webfont.woff') format('woff'),
+         url('/fashion/fonts/nexa_light-webfont.ttf') format('truetype'),
+         url('/fashion/fonts/nexa_light-webfont.svg#nexa_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: "NexaBold";
+    src: url('/fashion/fonts/nexa_bold-webfont.eot');
+    src: url('/fashion/fonts/nexa_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fashion/fonts/nexa_bold-webfont.woff2') format('woff2'),
+         url('/fashion/fonts/nexa_bold-webfont.woff') format('woff'),
+         url('/fashion/fonts/nexa_bold-webfont.ttf') format('truetype'),
+         url('/fashion/fonts/nexa_bold-webfont.svg#nexa_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a{
+	cursor:pointer;
+}
+
+/*Скрытое меню*/
+
+.menu_hidden{
+	position:fixed;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	background-color: rgb(255,255,255);
+	overflow:hidden;
+	display:none;
+	z-index:100;
+}
+
+.menu_hidden_list{
+	margin-top:40px;
+}
+
+.menu_hidden_list a{
+	display:block;
+	cursor:pointer;
+	margin:0 auto 20px;
+	text-decoration:none;
+	text-align: center;
+	font-family: "KalingaBold","Times New Roman",serif;
+	font-size:14px;
+	
+}
+
+a.full_version{
+	margin-top: 30px;
+	text-decoration:underline;
+	color:rgb(0,216,229);
+	font-family: "KalingaBold","Times New Roman",serif;
+	font-size:14px;
+}
+
+a.full_version:hover{
+	color:rgb(0,216,229) !important;
+}
+
+.menu_hidden_list a:hover{
+	color:rgb(42,42,42);
+}
+
+#arrow_menu{
+	height:25px;
+	width:25px;
+	margin:20px auto 0;
+}
+
+.hidden{
+	display:none;
+}
+
+.visible{
+	display:block;
+}
+
+
+/* HEADER
+-----------------------------------------------------------------------------*/
+
+.header a{
+	display: inline-block;
+    vertical-align: top;
+}
+
+
+/* Header-1 
+-----------------------------------------------------------------------------*/
+
+.header-1{
+	height: 50px;
+	border-bottom: 1px solid rgb(228,228,228);
+	color: rgb(74,74,74);
+}
+
+.header-1_norm{
+	width: 1360px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.headbox1{
+	display: inline-block;
+	vertical-align: top;
+	height: 50px;
+	border-right: 1px solid rgb(228,228,228);
+	font-family: "Kalinga","Times New Roman",serif;
+	font-size: 16px;
+	line-height: 18px;
+} 
+
+.header-1 a{
+	color: rgb(74,74,74);
+}
+
+.header-1 .text{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 19px;
+}
+
+.callme span{
+	margin-left: 2px;
+}
+
+.callme a{
+	display: inline;
+}
+
+.callme .text{
+	color: rgb(88,87,87);
+	margin-left: 1px;
+}
+
+.account{
+	width: 685px;
+}
+
+.account a{
+	margin-left: 578px;
+}
+
+.checkout{
+	width: 107px;
+}
+
+.checkout .text{
+	margin-left: 19px;
+}
+
+.cart{
+	width: 66px;
+}
+
+.cart .text{
+	margin-left: 16px;
+}
+
+.shop{
+	width: 74px;
+}
+
+.shop .text{
+	margin-left: 18px;
+}
+
+.watchlist{
+	width: 109px;
+	position: relative;
+}
+
+.watchlist .text{
+	margin-left: 19px;
+}
+
+.watchgoods{
+	display: inline-block;
+	vertical-align: top;
+	position: absolute;
+	height: 18px;
+	width: 18px;
+	top: 7px;
+	left: 84px;
+	font-family: KalingaBold,Times New Roman,serif;
+	font-size: 12px;
+	color: rgb(138,138,138);
+	padding: 2px 0 5px 0;
+	text-align:center;
+	background-color: rgb(0,216,229);
+	border-radius: 50px;
+}
+
+.currency{
+	width: 89px;
+	position: relative;
+	background-color: rgb(240,240,240);
+	font-size: 14px;
+	line-height: 15px;
+	cursor:pointer;
+}
+
+.currency a{
+	height:13px;
+	width:39px;
+	display:block;
+	margin: 21px 0 0 19px;
+	text-decoration:none;
+}
+
+.currency a:hover{
+	border-bottom:1px solid rgb(74,74,74);
+}
+
+.dollar{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.gray_arrow{
+	height: 7px;
+	width: 10px;
+	display: inline-block;
+	vertical-align: top;
+	position: absolute;
+	top: 23px;
+	left: 61px;
+	background-image: url(/fashion/img/sprite.png);
+	background-position: 0 -799px;
+	background-repeat: no-repeat;
+}
+
+.showCurrency{
+	position: absolute;
+	left: -62px;
+	top: 27px;
+	display: none;
+	width: 90px;
+	font-family: "Kalinga","Times New Roman",serif;
+	background-color: rgb(240,240,240);
+	border-right: 1px solid rgb(228,228,228);
+	border-left: 1px solid rgb(228,228,228);
+	border-bottom: 1px solid rgb(228,228,228);
+	z-index: 2;
+}
+
+.currency .sign{
+	display: block;
+	margin-top:0;
+	margin-bottom: 15px;
+	margin-left: 19px;
+}
+
+
+.language{
+	width: 86px;
+	background-color: rgb(240,240,240);
+}
+
+.language .flag{
+	height: 11px;
+	width: 19px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 21px 0 0 20px;
+	background-image: url(/fashion/img/sprite.png);
+	background-position: 0 -771px;
+	background-repeat: no-repeat;
+}
+
+
+/* Header-2 
+-----------------------------------------------------------------------------*/
+
+
+.header-2{
+	height: 100px;
+	font-family: "KalingaBold","Times New Roman",serif;
+	font-size: 14px;
+}
+
+.header-2_norm{
+	position:relative;
+	width: 1360px;
+	margin: 0 auto;
+}
+
+.header-2 a{
+	margin-top: 15px;
+	margin-right: 5px;
+	color: rgb(84,84,84);
+}
+
+.header-2 .text{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.black_arrow{
+	height: 7px;
+	width: 10px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 19px;
+	margin-left: -6px;
+	background-image: url("/fashion/img/sprite.png");
+	background-position: 0 -832px;
+	background-repeat: no-repeat;
+}
+
+.nav_show{
+	background-color: rgb(255,255,255);
+	position: absolute;
+	width: 150px;
+	top: 33px;
+	left: -14px;
+	min-width: 90px;
+	display: none;
+	z-index: 1;
+}
+
+.nav_show a{
+	display: block;
+	margin-bottom: 5px;
+	margin-left: 15px;
+}
+
+
+.sticker{
+	height: 17px;
+	width: 36px;
+	font-family: NexaBold,Times New Roman,serif;
+	font-size: 9px;
+	color: rgb(255,255,255);
+	text-align:center;
+}
+
+
+.logo{
+	height: 100px;
+	width: 625px;
+	display: inline-block;
+	vertical-align: top;
+	font-family: PacificoReg,Times New Roman,serif;
+	font-size: 40px;
+	line-height: 42px;
+}
+
+.home{
+	height: 40px;
+	width: 80px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 30px;
+}
+
+.women{
+	height: 40px;
+	width: 97px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 30px;
+	position: relative;
+}
+
+.man{
+	height: 40px;
+	width: 69px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 30px;
+	position: relative;
+}
+
+.man .sticker.new_small{
+	position: absolute;
+	top: -2px;
+	left: 10px;
+}
+
+.new_small{
+	background-image: url("/fashion/img/sprite.png");
+	background-position: 0 -1268px;
+	background-repeat: no-repeat;
+}
+
+.man li ul{
+	background-color: rgb(255,255,255);
+	position: absolute;
+	display: none;
+	margin-left: -35px;
+	margin-top: 9px;
+}
+
+.man li ul li{
+	margin-bottom: 5px;
+}
+
+.man li:hover ul{
+	display: block;
+}
+
+.shortcode{
+	height: 40px;
+	width: 129px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 30px;
+	position: relative;
+}
+
+.sticker.hot{
+	position: absolute;
+	top: -2px;
+	left: 59px;
+}
+
+.hot{
+	background-image: url("/fashion/img/sprite.png");
+	background-position: 0 -1222px;
+	background-repeat: no-repeat;
+}
+
+.hot span{
+	font-size: 11px;
+}
+
+.blog{
+	height: 40px;
+	width: 77px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 30px;
+}
+
+.pages{
+	position: relative;
+	height: 40px;
+	width: 94px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 30px;
+	border-right: 1px solid rgb(228,228,228);
+}
+
+.my_cart{
+	height: 40px;
+	width: 100px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 30px;
+}
+
+.my_cart a{
+	width: 100px;
+	margin-left: 32px;
+	color: rgb(42,42,42);
+}
+
+.buy{
+	height: 40px;
+	width: 52px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 30px;
+	position: relative;
+}
+
+.buy .buy_cart{
+	height: 18px;
+	width: 20px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 11px;
+	margin-left: 2px;
+	background-image: url("/fashion/img/sprite.png");
+	background-position: 0 -1371px;
+	background-repeat: no-repeat;
+}
+
+.zeroicon{
+	display: inline-block;
+	vertical-align: top;
+	position: absolute;
+	height: 18px;
+	width: 18px;
+	top: 0px;
+	left: 16px;
+	font-family: KalingaBold,Times New Roman,serif;
+	font-size: 12px;
+	color: rgb(138,138,138);
+	padding: 2px 0 5px 0;
+	text-align:center;
+	background-color: rgb(0,216,229);
+	border-radius: 50px;
+}
+
+.search{
+	height: 37px;
+	width: 37px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 29px 0 0 0;
+	border: 1px solid rgb(101,101,101);
+}
+
+.loupe{
+	height: 17px;
+	width: 17px;
+	margin: 10px 10px 9px 9px;
+	background-image: url("/fashion/img/sprite.png");
+	background-position: 0 -1413px;
+	background-repeat: no-repeat;
+}
+
+.inputSearch{
+	height: 37px;
+	width: 150px;
+	position: absolute;
+	top: 29px;
+	left: 1174px;
+	padding: 10px 10px 7px 20px;
+	display: none;
+	color: rgb(49,49,49);
+	z-index: 1;
+	line-height:20px;
+	font-size:14px;
+	border: 1px solid rgb(101,101,101);
+}
+
+
+/* Content1
+---------------------------------------------------------- */
+
+.content-1{
+	position: relative;
+	width: 1360px;
+	margin: 0 auto;
+}
+
+.slider_butt{
+	position: absolute;
+	height: 51px;
+	width: 51px;
+	z-index: 2;
+	cursor:pointer;
+}
+.slider_butt_1{
+	background-color: rgb(192,192,192);
+}
+
+.slider_butt_1.left{
+	top: 378px;
+}
+
+.slider_butt_1.right{
+	top: 378px;
+	left: 1309px;
+}
+
+.slider_arrow{
+	height: 28px;
+	width: 16px;
+	background-image: url("/fashion/img/sprite.png");
+	background-repeat: no-repeat;
+	margin-top: 12px;
+}
+
+
+.slider_arrow.left{
+	background-position: -96px -1168px;
+	margin-left: 18px;
+}
+
+.slider_arrow.right{
+	background-position: -154px -1168px;
+	margin-left: 18px;
+}
+
+.slide{
+	height: 801px;
+	width: 1360px;
+	overflow: hidden;
+	display: none;
+}
+
+.shown{
+	display: block;
+}
+
+.slide img{
+	display: block;
+	width:1360px;
+	overflow:hidden;
+}
+
+.slide .title{
+	position: absolute;
+	top: 242px;
+	left: 123px;
+	font-family: "NexaBold","Times New Roman",serif;
+	font-size: 70px;
+	line-height: 58px;
+	color: rgb(255,255,255);
+	min-height: 50px;
+	min-width: 600px;
+}
+
+.slide .text1{
+	position: absolute;
+	top: 348px;
+	left: 129px;
+	font-family: "Nexa","Times New Roman",serif;
+	font-size: 32px;
+	line-height: 26px;
+	color: rgb(255,255,255);
+	min-height: 24px;
+	min-width: 600px;
+}
+
+.slide .text2{
+	position: absolute;
+	top: 388px;
+	left: 128px;
+	font-family: "NexaBold","Times New Roman",serif;
+	font-size: 40px;
+	line-height: 32px;
+	color: rgb(255,255,255);
+	min-height: 28px;
+	min-width: 600px;
+}
+
+.slide a{
+	position: absolute;
+	top: 485px;
+	left: 128px;
+	font-family: "NexaBold","Times New Roman",serif;
+	font-size: 20px;
+	height: 72px;
+	width: 211px;
+	padding: 28px 25px 22px 25px;
+	text-align: center;
+	text-decoration: none;
+	color: rgb(255,254,254);
+	border: 1px solid rgb(255,255,255);
+}
+
+
+/* Content2
+---------------------------------------------------------- */
+
+.content-2{
+	width: 1360px;
+	margin: 75px auto 0;
+	font-size: 0px;
+}
+
+.content-2 a{
+	text-decoration: none;
+}
+
+.banner2, .banner3, .banner4{
+	display: inline-block;
+	vertical-align: top;
+	overflow: hidden;
+}
+
+.content-2 img{
+	display: block;
+}
+
+.banner2{
+	height: 290px;
+	width: 441px;
+	margin-right: 20px;
+}
+
+.banner2 .text1{
+	margin-top: -273px;
+	margin-left: 27px;
+	font-family: "Nexa","Times New Roman",serif;
+	font-size: 30px;
+	line-height: 36px;
+	color: rgb(0,216,229);
+}
+
+.banner2 .text2{
+	font-family: "NexaBold","Times New Roman",serif;
+	font-size: 30px;
+	line-height: 41px;
+	color: rgb(254,254,254);
+	margin-top: 2px;
+	margin-left: 27px;
+}
+
+.banner3{
+	height: 290px;
+	width: 439px;
+	margin-right: 20px;
+	background-color: rgb(0,216,229);
+}
+
+.banner3_layer{
+	height: 250px;
+	width: 399px;
+	background-color: rgb(0,216,229);
+	border: 1px solid rgb(255,255,255);
+	margin-top:20px;
+	margin-left:20px;
+}
+
+.banner3 .text{
+	text-align: center;
+	color: rgb(255,248,248);
+	font-family: "GIL","Times New Roman",serif;
+	font-size: 20px;
+	line-height: 30px;
+	margin-top: 0px;
+	text-align: center;
+	margin-top: 74px;
+}
+
+.banner3 .text span{
+	font-family: "GILBOLD","Times New Roman",serif;
+	font-size: 20px;
+}
+
+
+.banner3 .discount{
+	height: 68px;
+	width: 137px;
+	background-color: rgb(255,248,248);
+	color: rgb(0,216,229);
+	font-family: "GIL","Times New Roman",serif;
+	font-size: 30px;
+	text-align: center;
+	padding: 24px 20px 16px 20px;
+	margin-left: 133px;
+	margin-top: 5px;
+}
+
+.banner4{
+	position: relative;
+	height: 290px;
+	width: 440px;
+}
+
+.banner4 .text1{
+	margin-top: -246px;
+	margin-left: 33px;
+	color: rgb(255,255,255);
+	font-family: "GILBOLD","Times New Roman",serif;
+	font-size: 30px;
+	line-height: 35px;
+	
+}
+
+.banner4 .text2{
+	color: rgb(255,255,255);
+	font-family: "GIL","Times New Roman",serif;
+	font-size: 30px;
+	margin-left: 33px;
+	line-height: 35px;
+	margin-top: 3px;
+}
+
+.banner4 a{
+	position: absolute;
+	top: 138px;
+	left: 33px;
+	height: 36px;
+	width: 109px;
+	padding: 13px 3px 13px 13px;
+	font-family: "GILBOLD","Times New Roman",serif;
+	font-size: 13px;
+	line-height: 9px;
+	border: 1px solid rgb(255,255,255);
+	color: rgb(250,250,250);
+	text-decoration: none;
+}
+
+
+/* Content3
+---------------------------------------------------------- */
+
+.content-3{
+	height: 1300px;
+	width: 1360px;
+	overflow: hidden;
+	margin: 75px auto 0;
+	position: relative;
+	font-family: "KalingaBold","Times New Roman",serif;
+}
+
+.tabs2{
+	display: inline-block;
+}
+
+.tabs2 .tabs_list2 {
+	height: 36px;
+	margin-bottom: 77px;
+	margin-left: 57px;
+}
+
+.tabs2 ul{
+	margin:0px;
+	padding:0px;
+}
+
+.tabs2 ul li{
+	cursor:pointer;
+	display:block;
+	float: left;
+	padding-bottom: 17px;
+	margin-right: 18px;
+	font-family: "NexaBold","Times New Roman",serif;
+	font-size: 20px;
+	color: rgb(124,124,124);
+	text-decoration: none;
+	cursor:pointer;
+}
+
+.tabs2 ul li.active, .tabs2 ul li.active:hover{
+	margin-left: 0px;
+	color: rgb(1,1,1);
+	border-bottom: 2px solid rgb(0,0,0);
+}
+
+.tabs2 ul li:hover{
+	color: rgb(1,1,1);
+}
+
+.content-3 img{
+	display: block;
+}
+
+.content-3 .part1{
+	height: 1300px;
+	width: 450px;
+	float: left;
+	background-color: rgb(255,249,249);
+}
+
+.photo1, .photo2{
+	width: 450px;
+	overflow: hidden;
+}
+
+.photo1{
+	height: 590px;
+	margin-bottom: 38px;
+	margin-top: 112px;
+}
+
+.photo2{
+	height: 562px;
+}
+
+.content-3 .part2{
+	height: 1300px;
+	width: 910px;
+	float: left;
+	background-color: rgb(255,249,249);
+	overflow: hidden;
+}
+
+.slider_butt_2{
+	background-color: rgb(75,74,95);
+	top:  118px;
+	left: 232px;
+	z-index: 5;
+}
+
+.box{
+	height: 379px;
+	width: 284px;
+	position: relative;
+	display: block;
+	float: left;
+	overflow: hidden;
+	background-color: rgb(255,249,249);
+	margin-left: 18px;
+	margin-bottom: 25px;
+	margin-right: 1px;
+}
+
+.box_hover{
+	height: 285px;
+	width: 280px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	display: none;
+}
+
+.box img{
+	display: block;
+	height: 285px;
+	width: 280px;
+	margin-left:-1px;
+}
+
+.box .text{
+	height: 94px;
+	width: 282px;
+	background-color: rgb(255,255,255);
+	margin-top: -2px;
+}
+
+.sale{
+	height: 51px;
+	width: 51px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	background-color: rgb(75,74,95);
+	border-radius: 50px;
+	font-family: "KalingaBold","Times New Roman",serif;
+	font-size: 12px;
+	color: rgb(0,224,190);
+	padding: 21px 12px 21px 10px;
+	line-height: 13px;
+	z-index: 1;
+}
+
+.new{
+	height: 25px;
+	width: 62px;
+	position: absolute;
+	top: 8px;
+	left: 223px;
+	padding: 6px 7px 7px 20px;
+	font-family: "KalingaBold","Times New Roman",serif;
+	font-size: 14px;
+	color: rgb(254,255,255);
+	line-height: 14px;
+	background-image: url("/fashion/img/sprite.png");
+	background-position: 0 -1313px;
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+
+.stars{
+	height: 12px;
+	width: 59px;
+	margin-top: 15px;
+	margin-left: 20px;
+}
+
+.stars div{
+	float: left;
+	height: 11px;
+	width: 10px;
+	margin-right: 1px;
+}
+
+.stars_bottom{
+	margin-left: 13px;
+}
+
+.addlayer{
+	height: 285px;
+	width: 280px;
+	overflow: hidden;
+	background-color: rgb(47,47,47);
+	opacity: 0.8;
+	z-index: 0;
+}
+
+.square{
+	height: 42px;
+	width: 44px;
+	position: absolute;
+	top: 244px;
+	z-index: 1;
+}
+
+.add{
+	left: 192px;
+	background-color: rgb(0,216,229);
+}
+
+.favor{
+	left: 236px;
+	background-color: rgb(0,216,229);
+}
+
+.square_click{
+	background-color: rgb(145,145,145);
+	cursor:default;
+}
+
+.add_cart_layer{
+	display: block;
+	height: 42px;
+	width: 44px;
+	background-image: url("/fashion/img/sprite.png");
+	background-position: 0 -870px;
+	background-repeat: no-repeat;
+	margin-top: 10px;
+	margin-left: 9px;
+}
+
+.add_favor{
+	display: block;
+	height: 42px;
+	width: 44px;
+	background-image: url("/fashion/img/sprite.png");
+	background-position: 0 -924px;
+	background-repeat: no-repeat;
+	margin-top: 12px;
+	margin-left: 11px;
+}
+
+.arrow_right_2{
+	
+}
+
+.content-3 .part2 .title{
+	float: left;
+	margin-top: 20px;
+	margin-left: 19px;
+	font-size: 18px;
+	line-height: 20px;
+}
+
+.content-3 .part2 .price{
+	float: right;
+	margin-top: 20px;
+	margin-right: 12px;
+	font-size: 22px;
+	color: rgb(0,224,190);
+}
+
+
+
+/* Content-4
+---------------------------------------------------------- */
+
+.content-4{
+	width: 100%;
+	margin: 75px auto 0;
+	background-image: url("/fashion/img/blue_banner.png");
+	background-repeat: repeat;
+}
+
+.banner5{
+	height: 301px;
+	width: 1360px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.banner5 .title{
+	margin-top: -223px;
+	margin-left: 200px;
+	font-family: "NexaBold","Times New Roman",serif;
+	font-size: 40px;
+	color: rgb(54,54,54);
+}
+
+.banner5 .text{
+	margin-top: 23px;
+	margin-left: 200px;
+	font-family: "KalingaBold","Times New Roman",serif;
+	font-size: 13px;
+	color: rgb(141,141,141);
+}
+
+.banner5 a{
+	height: 45px;
+	width: 117px;
+	position: absolute;
+	top: 177px;
+	left: 406px;
+	background-color: rgb(54,54,54);
+	padding: 15px 18px 21px 18px;
+	text-align: center;
+	font-family: "NexaBold","Times New Roman",serif;
+	font-size: 14px;
+	color: rgb(255,255,255);
+	display: block;
+	text-decoration: none;
+}
+
+/* Content-5
+---------------------------------------------------------- */
+
+.content-5{
+	width: 1360px;
+	margin: 75px auto 0;
+	overflow: hidden;
+}
+
+.content-5 img{
+	display: block;
+	margin: 12px 0 0 12px;
+	
+}
+
+.content-5 .title{
+	height: 42px;
+	color: rgb(70,70,70);
+	margin-left: 571px;
+	font-family: "NexaBold","Times New Roman",serif;
+	font-size: 30px;
+	line-height: 28px;
+}
+
+.content-5 .line{
+	width: 41px;
+	height: 3px;
+	background-color: rgb(57,57,57);
+	margin-top: 17px;
+	margin-left: 90px;
+}
+
+.boxes{
+	height: 379px;
+	width: 305px;
+	float: left;
+	margin-top: 66px;
+	margin-right: 26px;
+	overflow: hidden;
+	position: relative;
+	background-color: rgb(255,255,255);
+}
+
+.box_hover2{
+	height: 286px;
+	width: 305px;
+	position: absolute;
+	top: 12px;
+	left: 12px;
+	overflow: hidden;
+	display: none;
+}
+
+.newBoxes{
+	margin-left: 31px;
+}
+
+.title_good{
+	float: left;
+	margin-top: 21px;
+	margin-left: 12px;
+	font-family: "KalingaBold","Times New Roman",serif;
+	font-size: 18px;
+	color: rgb(101,101,101);
+}
+
+.price_good{
+	float: right;
+	margin-top: 21px;
+	margin-right: 13px;
+	font-family: "KalingaBold","Times New Roman",serif;
+	font-size: 22px;
+	color: rgb(0,224,190);
+}
+
+.content-5 .text{
+	height: 96px;
+	width: 305px;
+}
+
+.content-5 .stars{
+	height: 12px;
+	width: 59px;
+}
+
+.load_more{
+	display: block;
+	margin: 60px auto;
+	height: 56px;
+	width: 360px;
+	padding: 24px 74px 20px 78px;
+	border: 1px solid rgb(101,101,101);
+	border-radius: 30px;
+	background-color: rgb(255,255,255);
+	color: rgb(101,101,101);
+	font-family: "Kalinga","Times New Roman",serif;
+	font-size: 16px;
+	text-align: center;
+	line-height: 12px;
+	text-decoration: none;
+}
+
+.load_more:hover, .load_more:focus{
+	text-decoration: none;
+	color: rgb(101,101,101);
+}
+
+.none{
+	display: none;
+}
+
+
+/* Content-6
+---------------------------------------------------------- */
+
+.content-6{
+	width: 1360px;
+	margin: 75px auto 0;
+}
+
+
+.banner6{
+	float: left;
+	height: 250px;
+	width: 550px;
+	background-color: rgb(0,216,229);
+	position: relative;
+}
+
+.banner6_block{
+	position: relative;
+	display: block;
+	height: 206px;
+	width: 508px;
+	margin: 20px;
+	background-color: rgb(0,216,229);
+	border: 2px solid rgb(249,255,255);
+	text-decoration: none;
+	color: rgb(251,255,255);
+	font-family: "NexaBold","Times New Roman",serif;
+	text-decoration: none !important;
+}
+
+.banner6_block:hover{
+	color: rgb(251,255,255);
+}
+
+.banner6_text1{
+	position: absolute;
+	top: 42px;
+	left: 129px;
+	text-align: center;
+	font-size: 95px;
+	line-height: 78px;
+	text-decoration: none;
+}
+
+.banner6_text2{
+	position: absolute;
+	top: 138px;
+	left: 136px;
+	text-align: center;
+	font-size: 32px;
+	line-height: 30px;
+	text-decoration: none;
+}
+
+.banner7{
+	position: relative;
+	float: right;
+	height: 250px;
+	width: 779px;
+	overflow: hidden;
+}
+
+.banner7 .title{
+	position: absolute;
+	top: 68px;
+	left: 75px;
+	color: rgb(254,251,250);
+	font-family: "NexaBold","Times New Roman",serif;
+	font-size: 35px;
+	line-height: 29px;
+}
+
+.email{
+	height: 44px;
+	width: 299px;
+	border: 2px solid rgb(255,255,253);
+	position: absolute;
+	top: 145px;
+	left: 163px;
+	color: rgb(254,251,250);
+	font-family: "Kalinga","Times New Roman",serif;
+	font-size: 18px;
+	padding: 14px 0 14px 19px;
+	line-height: 29px;
+}
+
+.email input{
+	height: 44px;
+	width: 299px;
+	margin-top: -16px;
+	margin-left: -21px;
+	background: transparent;
+	border: none;
+	color: rgb(254,251,250);
+	padding-left: 18px;
+}
+
+.banner7 input::-webkit-input-placeholder{
+	color: rgb(254,251,250);
+	font-family: "Kalinga","Times New Roman",serif;
+	font-size: 18px;
+}
+
+.banner7 input:-moz-placeholder{
+	color: rgb(254,251,250);
+	font-family: "Kalinga","Times New Roman",serif;
+	font-size: 18px;
+}
+
+.banner7 input::-moz-placeholder{
+	color: rgb(254,251,250);
+	font-family: "Kalinga","Times New Roman",serif;
+	font-size: 18px;
+}
+
+.banner7 input:-ms-input-placeholder {
+	color: rgb(254,251,250);
+	font-family: "Kalinga","Times New Roman",serif;
+	font-size: 18px;
+}
+
+.banner7 a{
+	display: block;
+	position: absolute;
+	top: 145px;
+	left: 479px;
+	height: 44px;
+	width: 138px;
+	color: rgb(254,251,250);
+	background-color: rgb(0,216,229);
+	padding: 14px 22px 14px 22px;
+	font-family: "Kalinga","Times New Roman",serif;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+/* Content7
+---------------------------------------------------------- */
+
+.content-7{
+	height: 541px;
+	width: 1340px;
+	margin: 75px auto 75px;
+	overflow: hidden;
+	border-bottom: 1px solid rgb(117,113,114);
+}
+
+.content-7 .title{
+	font-family: "NexaBold","Times New Roman",serif;
+	font-size: 30px;
+	color: rgb(70,70,70);
+	line-height: 28px;
+	margin-left: 573px;
+}
+
+.content-7 .title .line{
+	height: 3px;
+	width: 48px;
+	margin-top: 17px;
+	margin-left: 73px;
+	background-color: rgb(70,70,70);
+	
+}
+
+.content-7 .brands{
+	height: 459px; 
+	width: 1340px;
+	overflow: hidden;
+	margin-top: 38px;
+	background-color: rgb(255,255,255);
+	border-top: 1px solid rgb(117,113,114);
+	border-left: 1px solid rgb(117,113,114);
+}
+
+.brands img{
+	display: block;
+	margin: 50px auto;
+}
+
+.brands .brand{
+	float: left;
+	height: 229px;
+	width: 223px;
+	overflow: hidden;
+	border-bottom: 1px solid rgb(117,113,114);
+	border-right: 1px solid rgb(117,113,114);
+}
+
+/* Выравниваем бренды по высоте
+(за точку отчета взят самый
+высокий бренд в ряду): */
+
+.brands div:last-child{
+	margin-top: -26px;
+}
+
+.brands div:nth-child(11){
+	margin-top: -37px;
+}
+
+.brands div:nth-child(10){
+	margin-top: -43px;
+}
+
+.brands div:nth-child(9){
+	margin-top: -28px;
+}
+
+.brands div:nth-child(8){
+	margin-top: -30px;
+}
+
+.brands div:nth-child(7){
+	margin-top: -26px;
+}
+
+.brands div:nth-child(6){
+	margin-top: 38px;
+}
+
+.brands div:nth-child(5){
+	margin-top: 6px;
+}
+
+.brands .jorg{
+	margin-top: 70px;
+}
+
+.brands .famous{
+	margin-top: 85px;
+}
+
+.brands div:nth-child(2){
+	margin-top: 6px;
+}
+
+
+
+/* 	FOOTER
+-----------------------------------------------------------------------------*/
+
+
+/* Footer-1
+-----------------------------------------------------------------------------*/
+
+
+
+.footer-1{
+	height: 60px;
+	border-bottom: 1px solid rgb(64,64,64);
+	background-color: rgb(23,23,23);
+}
+
+.footer-1-norm{
+	width: 1360px;
+	margin: 0 auto;
+	background-color: rgb(23,23,23);
+}
+
+.footer a{
+	display: block;
+}
+
+.style{
+	float: left;
+	height: 60px; 
+	width: 203px;
+	border-right: 1px solid rgb(64,64,64);
+	color: white;
+}
+
+.style .text{
+	margin-top: 23px;
+	font-family: "NexaBold","Times New Roman",serif;
+	font-size: 32px;
+	letter-spacing: 1px;
+}
+
+.motto{
+	float: left;
+	width: 870px;
+	font-family: "Kalinga","Times New Roman",serif;
+	font-size: 17px;
+	color: rgb(137,137,137);
+}
+
+.motto .text{
+	margin: 20px 5px 0 42px;
+}
+
+.social{
+	height: 49px;
+	width: 271px; 
+	float: right;
+	margin-top: 10px;
+	margin-right: 1px;
+}
+
+.social a{
+	float: left;
+	background-image: url("/fashion/img/sprite.png");
+	background-repeat: no-repeat;
+	min-height: 39px;
+	min-width: 38px;
+	margin-left: 7px;
+}
+
+.twit{
+	background-position: 0 0;
+}
+
+.twit:hover{
+	background-position: 0 -60px;
+}
+
+.google{
+	background-position: 0 -123px;
+}
+
+.google:hover{
+	background-position: 0 -186px;
+}
+
+.pint{
+	background-position: 0 -248px;
+}
+
+.pint:hover{
+	background-position: 0 -309px;
+}
+
+.rss{
+	background-position: 0 -374px;
+}
+
+.rss:hover{
+	background-position: 0 -435px;
+}
+
+.link{
+	background-position: 0 -500px;
+}
+
+.link:hover{
+	background-position: 0 -569px;
+}
+
+.facebook{
+	background-position: 0 -636px;
+}
+
+.facebook:hover{
+	background-position: 0 -702px;
+}
+
+/* Footer-2
+-----------------------------------------------------------------------------*/
+
+
+.footer-2{
+	height: 325px;
+	border-bottom: 1px solid rgb(64,64,64);
+}
+
+.footer-2-norm{
+	width: 1360px;
+	margin: 0 auto;
+	color: rgb(154,154,154);
+}
+
+.footer-2-col{
+	float: left;
+	margin-top: 30px;
+	margin-right: 5px;
+	font-size: 16px;
+}
+
+.footer-2 h1{
+	margin-bottom: 33px;
+	font-family: "NexaBold","Times New Roman",serif;
+	font-size: 20px;
+	color: rgb(189,189,189);
+	line-height: 15px;
+}
+
+.info a, .my_acc a, .categ a, .help a{
+	margin-bottom: 15px;
+	font-family: "Kalinga","Times New Roman",serif;
+	font-size: 15px;
+	color: rgb(154,154,154);
+	line-height: 21px;
+	
+}
+
+.info{
+	width: 271px;
+}
+
+.my_acc{
+	width: 262px;
+}
+
+.categ{
+	width: 270px;
+}
+
+.help{
+	width: 256px;
+}
+
+.contacts{
+	width: 258px;
+	margin-left: 10px;
+}
+
+.contacts a{
+	font-family: "Kalinga","Times New Roman",serif;
+	font-size: 14px;
+	color: rgb(154,154,154);
+	line-height: 21px;
+}
+
+.cont1{
+	font-family: "Kalinga","Times New Roman",serif;
+	font-size: 15px;
+	line-height: 21px;
+}
+
+.cont2, .cont3{
+	margin-top: 23px;
+	font-family: "Kalinga","Times New Roman",serif;
+	font-size: 15px;
+	line-height: 21px;
+}
+
+.cont3_tel{
+	float: left;
+	margin-bottom:0px;
+}
+
+.cont3_sign{
+	float: left;
+}
+
+
+
+/* Footer-3
+-----------------------------------------------------------------------------*/
+
+
+.footer-3{
+	height: 114px;
+	margin: 0 auto;
+}
+
+.footer-3-norm{
+	width: 1360px;
+	margin: 0 auto;
+}
+
+.footer-3 a{
+	display: inline;
+	color: rgb(0,210,235);
+}
+
+.footer-3-norm{
+	width: 1360px;
+	margin: 0 auto;
+	color: rgb(209,209,209);
+}
+
+.copyright{
+	float: left;
+}
+
+.copyright .text{
+	margin-top: 33px;
+	font-family: "Kalinga","Times New Roman",serif;
+	font-size: 14px;
+	line-height: 25px;
+	margin-right: 5px;
+}
+
+.copyright .text a{
+	cursor:pointer;
+}
+
+.payment{
+	float: right;
+	margin-right: 1px;
+	margin-top: 37px;
+}
+
+.payment a{
+	height: 29px;
+	width: 45px;
+	float: left;
+	margin-left: 15px;
+	background-image: url("/fashion/img/sprite.png");
+	background-repeat: no-repeat;
+}
+
+.visa{
+	background-position: 0 -1490px;
+}
+.paypal{
+	background-position: 0 -1555px;
+}
+.amazon{
+	background-position: 0 -1635px;
+}
+.maestro{
+	background-position: 0 -1715px;
+}
+
+
+
+
+
+/* PRODUCT PAGE
+-----------------------------------------------------------------------------*/
+
+/*CONTENT_PROD_1
+-----------------------------------------------------------------------------*/
+
+.content_prod_1{
+	height: 60px;
+	width: 100%;
+	background-color: rgb(240,240,240);
+}
+
+.content_prod_1_norm{
+	width: 1360px;
+	margin: 0 auto;
+}
+
+.content_prod_1 a{
+	display: block;
+	float: left;
+	margin-top: 24px;
+	color: rgb(6,7,7);
+	font-family: "KalingaBold","Times New Roman",serif;
+	font-size: 16px;
+	line-height: 16px;
+}
+
+.content_prod_1 a.first{
+	margin-right: 5px;
+}
+
+.content_prod_1 a.active{
+	color: rgb(0,216,229);
+	margin-left: 9px;
+	text-decoration: none;
+}
+
+/*CONTENT_PROD_2
+-----------------------------------------------------------------------------*/
+
+.content_prod_2{
+	background-color: rgb(255,249,249);
+}
+
+.content_prod_2_norm{
+	min-height: 729px;
+	width: 1360px;
+	margin: 0 auto;
+}
+
+/* Part1 */
+
+.content_prod_2 .part1{
+	width: 500px;
+	margin-top: 51px;
+	margin-right: 47px;
+	float: left;
+}
+
+.content_prod_2 .part1 img{
+	display: block;
+	height: 670px;
+	width: 500px;
+	overflow: hidden;
+}
+
+/* Part2 */
+
+.content_prod_2 .part2{
+	width: 460px;
+	margin-top: 51px;
+	margin-right: 43px;
+	float: left;
+}
+
+.content_prod_2 .part2 .h1{
+	margin-top: 24px;
+	height: 12px;
+	font-family: "KalingaBold","Times New Roman",serif;
+	font-size: 18px;
+	line-height: 17px;
+	color: rgb(35,34,34);
+}
+
+.content_prod_2 .style_code{
+	min-height: 15px;
+	margin-top: 17px;
+	font-family: "KalingaBold","Times New Roman",serif;
+	font-size: 14px;
+	line-height: 16px;
+	color: rgb(95,95,95);
+}
+
+.content_prod_2 .style_code div{
+	height: 15px;
+	padding-top: 1px;
+	float: left;
+}
+
+.content_prod_2 .style_code a{
+	height: 15px;
+	padding-top: 1px;
+	float: left;
+}
+
+.content_prod_2 a:hover{
+	color: rgb(95,95,95);
+}
+
+.content_prod_2 .prod_style{
+	min-width: 98px;
+	border-right: 1px solid rgb(144,144,144);
+	padding-right: 9px;
+}
+
+.content_prod_2 .code{
+	min-width: 97px;
+	padding-left: 14px;
+}
+.content_prod_2 .reviews{
+	min-height: 14px;
+	margin-top: 13px;
+}
+
+.content_prod_2 .reviews div{
+	height: 14px;
+	float: left;
+	font-family: "KalingaBold","Times New Roman",serif;
+	font-size: 12px;
+	line-height: 12px;
+}
+
+.content_prod_2 .reviews a{
+	height: 14px;
+	float: left;
+	font-family: "KalingaBold","Times New Roman",serif;
+	font-size: 12px;
+	line-height: 12px;
+}
+
+.stars_rev{
+	position: relative;
+	min-width: 67px;	
+	margin-right: 7px;
+	margin-left: 1px;
+	padding-top: 2px;
+}
+
+.stars_rev div{
+	float: left;
+	height: 11px;
+	width: 10px;
+	margin-right: 3px;
+}
+
+.star_yes{
+	background-image: url("/fashion/img/sprite.png");
+	background-position: 0 -1847px;
+	background-repeat: no-repeat;
+}
+
+.star_no{
+	background-image: url("/fashion/img/sprite.png");
+	background-position: 0 -1868px;
+	background-repeat: no-repeat;
+}
+
+.sum_rev{
+	border-right: 1px solid rgb(144,144,144);
+	padding-top: 2px;
+}
+
+.sum_rev div{
+	float: left;
+}
+
+.sum_rev a{
+	float: left;
+}
+
+.sum_rev .number_rev{
+	padding-right: 4px;
+}
+
+.sum_rev .text{
+	padding-right: 10px;
+}
+
+.add_rev{
+	padding-top: 2px;
+	padding-left: 8px;
+}
+
+.add_rev:hover{
+	text-decoration: none;
+}
+
+.availab{
+	min-height: 16px;
+	margin-top: 17px;
+	font-family: "KalingaBold","Times New Roman",serif;
+	font-size: 14px;
+	line-height: 15px;
+	padding-bottom: 3px;
+}
+
+.availab div{
+	float: left;
+}
+
+.availab .title{
+	padding-right: 4px;
+}
+
+.availab  .availab_now{
+	color: rgb(0,216,229);
+}
+
+.price_prod{
+	min-height: 17px;
+	margin-top: 16px;
+	margin-left: 1px;
+	font-family: "KalingaBold","Times New Roman",serif;
+	font-size: 20px;
+	line-height: 22px;
+	color: rgb(0,216,229);
+}
+
+.prod_text{
+	margin-top: 46px;
+	min-height: 92px;
+	font-family: "KalingaBold","Times New Roman",serif;
+	font-size: 12px;
+	line-height: 20px;
+	color: rgb(138,138,138);
+}
+
+.quantity{
+	margin-top: 64px;
+	min-height: 42px;
+}
+
+.quantity div, .quantity input{
+	float: left;
+}
+
+.quantity .text{
+	height: 42px;
+	padding-top: 16px;
+	padding-right: 10px;
+	font-family: "KalingaBold","Times New Roman",serif;
+	font-size: 12px;
+	line-height: 13px;
+	color: rgb(75,75,75);
+}
+
+.quantity  .number{
+	min-height: 42px;
+	min-width: 128px;
+	margin-right: 25px;
+	border: 1px solid rgb(225,225,225);
+	
+}
+
+.quantity  .number div{
+	float: left;
+	font-family: "KalingaBold","Times New Roman",serif;
+	font-size: 20px;
+	line-height: 15px;
+	text-align: center;
+}
+
+.quantity  .number .minus{
+	height: 42px;
+	width: 45px;
+	background-color: rgb(215,215,215);
+	color: rgb(75,75,75);
+	cursor:pointer;
+}
+
+.quantity  .number .minus .line{
+	height: 1px;
+	width: 10px;
+	margin-top: 21px;
+	margin-left: 18px;
+	background-color: rgb(75,75,75);
+}
+
+.quantity  .number input{
+	display: block;
+	float: left;
+	height: 42px;
+	width: 38px;
+	padding-top: 5px;
+	background-color: rgb(255,255,255);
+	color: rgb(68,68,68);
+	font-family: "Kalinga","Times New Roman",serif;
+	font-size: 16px;
+	line-height: 10px;
+	text-align: center;
+	border: none;
+}
+
+.quantity  .number .plus{
+	height: 42px;
+	width: 44px;
+	padding-top: 16px;
+	background-color: rgb(215,215,215);
+	color: rgb(75,75,75);
+	cursor:pointer;
+}
+
+.quantity  .number .plus_done{
+	cursor:default;
+}
+
+.quantity  .number  .minus_done{
+	cursor:default;
+}
+
+.add_to_cart{
+	height: 40px;
+	min-width: 134px;
+	background-color: rgb(0,216,229);
+	color: rgb(253,253,253);
+	cursor:pointer;
+	font-family: "KalingaBold","Times New Roman",serif;
+	font-size: 15px;
+	line-height: 15px;
+	text-align: center;
+	padding-top: 16px;
+	padding-bottom: 15px;
+}
+
+.add_to_cart_done{
+	background-color: rgb(145,145,145);
+	cursor:default;
+}
+
+.addit{
+	margin-top: 32px;
+	height: 40px;
+}
+
+.addblock{
+	height: 40px;
+	width: 120px;
+	margin-right: 16px;
+	float: left;
+	border: 1px solid rgb(225,225,225);
+	background-color: rgb(255,255,255);
+}
+
+.addblock_text{
+	height: 38px;
+	width: 78px;
+	float: left;
+	border-right: 1px solid rgb(225,225,225);
+	padding-top: 16px;
+	padding-left: 13px;
+	font-family: "KalingaBold","Times New Roman",serif;
+	font-size: 13px;
+	line-height: 12px;
+}
+
+.addblock_text_click{
+	border-right: 1px solid rgb(255,255,253);
+	color: rgb(254,254,254);
+}
+
+.addblock .add_addbl{
+	height: 40px;
+	width: 39px;
+	float: left;
+}
+
+.addblock_enter{
+	background-color: rgb(0,216,229);
+	cursor:default;
+}
+
+addblock wish{
+	margin-left: -2px;
+	background-color: rgb(0,216,229);
+	color: rgb(254,254,254);
+}
+
+addblock wish add {
+	background-color: rgb(0,216,229);
+}
+
+.gray{
+	background-color: rgb(215,215,215);
+}
+
+.wish_no_done{
+	display: block;
+	height: 17px;
+	width: 20px;
+	margin-top: 12px;
+	margin-left: 9px;
+	background-image: url("/fashion/img/sprite.png");
+	background-position: 0 -968px;
+	background-repeat: no-repeat;
+}
+
+.wish_done{
+	background-image: url("/fashion/img/sprite.png");
+	background-position: 0 -1012px;
+	background-repeat: no-repeat;
+}
+
+.addblock.compare{
+	color: rgb(91,91,91);
+}
+
+.compare_no_done{
+	display: block;
+	height: 17px;
+	width: 17px;
+	margin-top: 12px;
+	margin-left: 10px;
+	background-image: url("/fashion/img/sprite.png");
+	background-position: 0 -1058px;
+	background-repeat: no-repeat;
+}
+
+.compare_done{
+	background-image: url("/fashion/img/sprite.png");
+	background-position: 0 -1102px;
+	background-repeat: no-repeat;
+}
+
+.addblock.share{
+	color: rgb(91,91,91);
+	width: 121px;
+}
+
+.addblock.share .add_addbl{
+	width: 40px;
+}
+
+.add_addbl_icon{
+	display: block;
+	height: 15px;
+	width: 21px;
+	margin-top: 13px;
+	margin-left: 9px;
+	background-image: url("/fashion/img/sprite.png");
+	background-position: 0 -1904px;
+	background-repeat: no-repeat;
+}
+
+
+
+/* Part3 */
+
+.content_prod_2 .part3{
+	width: 308px;
+	float: left;
+	margin-top: 51px;
+}
+
+.content_prod_2 .part3 .h2{
+	margin: 0px;
+	width: 260px;
+	padding-right: 10px;
+	float: left;
+	font-family: "NexaBold","Times New Roman",serif;
+	font-size: 20px;
+	line-height: 18px;
+	color: rgb(54,54,54);
+}
+
+.slide_prod{
+	float: left;
+	margin-bottom: 25px;
+}
+
+.slide_prod1{
+	height: 21px;
+	width: 21px;
+	background-color: rgb(255,255,255);
+	float: left;
+	margin-right: 5px;
+	border: 1px solid rgb(173,169,168);
+	cursor:pointer;
+}
+
+.slide_prod1 div{
+	height: 10px;
+	width: 6px;
+	margin-top: 5px;
+	margin-left: 7px;
+	background-image: url("/fashion/img/sprite.png");
+	background-position: 0 -1940px;
+	background-repeat: no-repeat;
+}
+
+.slide_prod2{
+	height: 21px;
+	width: 21px;
+	background-color: rgb(255,255,255);
+	float: left;
+	border: 1px solid rgb(173,169,168);
+	cursor:pointer;
+}
+
+.slide_prod2 div{
+	height: 10px;
+	width: 6px;
+	margin-top: 5px;
+	margin-left: 7px;
+	background-image: url("/fashion/img/sprite.png");
+	background-position: 0 -1967px;
+	background-repeat: no-repeat;
+}
+
+.slider_related{
+	width: 308px;
+	height: 451px;
+}
+
+.slides_related{
+	width: 308px;
+	height: 404px;
+}
+
+.slides_related a{
+	display: none;
+}
+
+.slides_related .firsts{
+	display: block;
+}
+
+.content_prod_2 .part3 img{
+	display: block;
+	width: 308px;
+	height: 404px;
+	overflow: hidden;
+}
+
+.relat_prod{
+	margin-top: 25px;
+	min-height: 85px;
+}
+
+.relat_prod .title{
+	float: left;
+	margin-left: 10px;
+	font-family: "KalingaBold","Times New Roman",serif;
+	font-size: 20px;
+	line-height: 20px;
+	color: rgb(54,54,54);
+}
+
+.relat_prod .price{
+	margin-right: 11px;
+	float: right;
+	font-family: "KalingaBold","Times New Roman",serif;
+	font-size: 25px;
+	line-height: 26px;
+	color: rgb(0,216,229);
+}
+
+.stars_relat_prod{
+	min-height: 11px;
+	min-width: 67px;
+	margin-left: 10px;
+}
+
+.stars_relat_prod div{
+	float: left;
+	height: 11px;
+	width: 10px;
+	margin-right: 3px;
+}
+
+.tags_prod .title{
+	font-family: "NexaBold","Times New Roman",serif;
+	font-size: 20px;
+	line-height: 17px;
+	color: rgb(54,54,54);
+}
+
+.tags_prod_tag{
+	margin-top: 28px;
+	overflow: hidden;
+}
+
+.tags_prod_tag a{
+	height: 30px;
+	min-width: 49px;
+	float: left;
+	margin-bottom: 9px;
+	margin-right: 8px;
+	cursor:pointer;
+	background-color: rgb(255,255,255);
+	color: rgb(119,119,119);
+	text-align: center;
+	padding: 9px 12px 9px 12px;
+	font-family: "KalingaBold","Times New Roman",serif;
+	font-size: 12px;
+	line-height: 14px;
+	text-decoration: none;
+	border: 1px solid rgb(228,224,223);
+}
+
+.tags_prod_tag a:hover{
+	background:rgb(214,214,214);
+}
+
+.tags_prod_tag a.sams{
+	padding-top: 9px;
+}
+
+/*CONTENT_PROD_3
+-----------------------------------------------------------------------------*/
+
+
+.content_prod_3{
+	background-color: rgb(255,249,249);
+}
+
+.content_prod_3_norm{
+	padding-top: 47px;
+	padding-bottom: 362px;
+}
+
+.content_prod_3_norm{
+	width: 1360px;
+	margin: 0 auto;
+}
+
+.descr_prod{
+	background-color: rgb(255,255,255);
+	padding: 19px 20px 19px 19px;
+	color: rgb(82,81,81);
+}
+
+.rev_prod{
+	background-color: rgb(255,255,255);
+	padding: 19px 16px 19px 16px;
+	color: rgb(82,81,81);
+}
+
+.tag_prod{
+	background-color: rgb(255,255,255);
+	padding: 19px 16px 18px 16px;
+	color: rgb(82,81,81);
+}
+
+.custom_rev{
+	margin-top: 24px;
+	font-family: "KalingaBold","Times New Roman",serif;
+	font-size: 25px;
+	line-height: 24px;
+	color: rgb(41,41,41);
+}
+
+.content_prod_3 .text{
+	font-family: "KalingaBold","Times New Roman",serif;
+	font-size: 14px;
+	color: rgb(105,105,105);
+	width: 390px;
+}
+
+.feed{
+	margin-top: 20px;
+	color: rgb(105,105,105);
+	line-height: 14px;
+}
+
+.custom{
+	float: left;
+	margin-top: 6px;
+	margin-right: 5px;
+	color: rgb(31,31,31);
+	line-height: 14px;
+}
+
+.user{
+	float: left;
+	margin-top: 6px;
+	color: rgb(0,216,229);
+	line-height: 14px;
+}
+
+.feedback{
+	margin-top: 16px;
+	line-height: 20px;
+}
+
+.posted{
+	float: left;
+	margin-top: 14px;
+	margin-right: 5px;
+	line-height: 14px;
+}
+
+.date{
+	float: left;
+	margin-top: 14px;
+	color: rgb(33,33,33);
+	line-height: 14px;
+}
+
+.stars_feed.value{
+	margin-top: 27px;
+}
+
+.stars_feed{
+	margin-top: 13px;
+}
+
+.stars_feed .stars_stars_feed div{
+	float: left;
+	height: 11px;
+	width: 10px;
+	margin-right: 3px;
+}
+
+.star_text{
+	min-width: 46px;
+	float: left;
+	padding-right: 7px;
+	line-height: 13px;
+}
+
+.stars_feed .stars_stars_feed{
+	min-width: 67px;
+	float: left;
+	margin-top: 1px;
+}
+
+.tabs{
+	display: inline-block;
+}
+
+.tabs .tabs_content {
+	padding-top: 24px;
+}
+
+.tabs ul{
+	margin:0px;
+	padding:0px;
+}
+
+.tabs ul li{
+	cursor:pointer;
+	display:block;
+	height: 50px;
+	float: left;
+	margin-right: 16px;
+	font-family: "NexaBold","Times New Roman",serif;
+	font-size: 16px;
+	line-height: 14px;
+	text-align: center;
+	border: 1px solid rgb(228,224,223);
+}
+
+.tabs ul li.active, .tabs ul li.active:hover{
+	background-color: rgb(0,216,229);
+	color: rgb(255,255,255);
+}
+
+.tabs ul li:hover{
+	background:rgb(0,216,229);
+	color: rgb(255,255,255);
+}
+
+
+/*REGISTRATION FORM */
+
+.form1 h1{
+	margin-left: 230px;
+}
+
+input {
+    display: block;
+}
+
+input.error {
+    border-color: #ff0000;
+}
+
+select.error {
+    border-color: #ff0000;
+}
+
+
+/*Adaptive 
+-----------------------------------------------------------------------------*/
+
+@media all and (max-width: 430px)
+{
+
+
+/* Header
+
+---------------------------------------------------------- */
+
+/*Header1*/
+
+
+.account, .checkout, .cart, .shop, .watchlist, .header-1 .currency, .header-1 .language{
+	display:none;
+}
+
+.header-1_norm{
+	width: 100%;
+}
+
+.arrow_header{
+	height:32px;
+	width: 32px;
+	margin:0 auto;
+	background-image: url(/fashion/img/arrows.png);
+	background-position: 0 -32px;
+	background-repeat: no-repeat;
+	margin-top:-32px;
+}
+
+/*.headbox1.currency{
+	width:0px;
+	width: 65px;
+	height:0;
+	height:15px;
+	border:none;
+	background-color:rgb(255,255,255);
+}
+
+.headbox1.currency a{
+	width:0px;
+	width: 41px;
+	float:left;
+}
+
+.curr_lang{
+	height:15px;
+	width:120px;
+	margin:60px auto 0;
+}
+
+.currency, .language, .gray_arrow{
+	float:left;
+}
+
+.gray_arrow{
+	top: 2px;
+    left: 44px;
+}
+
+.showCurrency{
+	background-color:rgb(255,255,255);
+	border:none;
+	margin-top:-5px;
+}
+
+.showCurrency .sign{
+	margin-bottom:10px;
+	margin-left: 17px;
+}
+
+
+.language .flag, .headbox1.language .text{
+	margin:0;
+	float:left;
+	margin-right:2px;
+}
+
+.currency .dollar{
+	float:left;
+	margin-right:4px;
+}
+
+.currency .text{
+	float:left;
+}
+
+.currency .text:hover{
+	text-decoration:none;
+}
+
+.headbox1.language{
+	height:0;
+	height:15px;
+	width:0px;
+	width: 50px;
+	border:none;
+	background-color:rgb(255,255,255);
+}
+
+.language .text a:hover{
+	text-decoration:underline;
+}
+
+.header-1{
+	width: 100%;
+	border:none;
+}
+
+.header-1_norm{
+	width: 100%;
+}
+
+.headbox1.callme{
+	border:none;
+	width:0px;
+	width: 100%;
+}*/
+
+/*Header2*/
+
+
+.header-2{
+	height: 60px;
+	width: 100%;
+	font-family: "KalingaBold","Times New Roman",serif;
+	font-size: 14px;
+}
+
+.header-2_norm{
+	width: 100%;
+}
+
+
+.header-2 .text{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.black_arrow, .nav_show, .nav_show a, .sticker, .home, .shortcode, .blog, .pages, .search, .loupe{
+	display:none;
+}
+
+.logo{
+	height: 62px;
+	width: 66%;
+	display: inline-block;
+	vertical-align: top;
+	font-family: PacificoReg,Times New Roman,serif;
+	font-size: 35px;
+	line-height: 40px;
+}
+
+.header-2 .logo a{
+	margin-top:0;
+	margin-top:20px;
+}
+
+.women, .man{
+	display:none;
+}
+
+.my_cart{
+	height: 40px;
+	width: 22%;
+	display: inline-block;
+	vertical-align: top;
+	font-size:13px;
+	margin-top:0;
+	margin-top:20px;
+}
+
+.my_cart a{
+	display:block;
+	width:100%;
+	color: rgb(42,42,42);
+}
+
+.buy{
+	height: 40px;
+	width: 12%;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	margin-top:0;
+	margin-top:20px;
+}
+
+.zeroicon{
+	display: inline-block;
+	vertical-align: top;
+	position: absolute;
+	height: 18px;
+	width:18px;
+	top: 0px;
+	left: 16px;
+	font-family: KalingaBold,Times New Roman,serif;
+	font-size: 12px;
+	color: rgb(138,138,138);
+	padding: 2px 0 5px 0;
+	text-align:center;
+	background-color: rgb(0,216,229);
+	border-radius: 50px;
+}
+
+/* Content2
+---------------------------------------------------------- */
+
+.content-1,.content-2{
+	display:none;
+}
+
+
+/* Content3
+---------------------------------------------------------- */
+
+.content-3{
+	height: auto;
+	width:100%;
+	margin: 20px auto 0;
+	position: relative;
+}
+
+.tabs2{
+	width: 100%;
+	margin:0 auto;
+}
+
+.tabs2 .tabs_list2 {
+	height: 36px;
+	width: 275px;
+	margin:0px;
+	margin:0 auto 30px;
+}
+
+.tabs2 ul{
+	margin:0px;
+	padding:0px;
+}
+
+.tabs2 ul li{
+	cursor:pointer;
+	display:block;
+	float: left;
+	padding-bottom: 10px;
+	margin-right: 18px;
+	font-family: "NexaBold","Times New Roman",serif;
+	font-size: 15px;
+	color: rgb(124,124,124);
+	text-decoration: none;
+	cursor:pointer;
+}
+
+.tabs2 li.bestseller_list{
+	margin-right: 0px;
+}
+
+.tabs2 ul li.active, .tabs2 ul li.active:hover{
+	margin-left: 0px;
+	color: rgb(1,1,1);
+	border-bottom: 2px solid rgb(0,0,0);
+}
+
+.tabs_content{
+	width: 284px;
+	margin:0 auto;
+}
+
+.tabs2 ul li:hover{
+	color: rgb(1,1,1);
+}
+
+.content-3 img{
+	display: block;
+	margin: 0 auto;
+}
+
+.content-3 .part1{
+	display:none;
+	height: auto;
+	width: 145px;
+}
+
+.photo1, .photo2{
+	width: 145px;
+}
+
+.photo1 img, .photo2 img{
+	width: 145px;
+}
+
+.photo1{
+	height: 190px;
+	margin-bottom: 28px;
+	margin-top: 66px;
+}
+
+.photo2{
+	height: 180px;
+}
+
+.content-3 .part2{
+	height: auto;
+	width: 100%;
+}
+
+.featured, .latest, .bestseller{
+	overflow:hidden;
+}
+
+.slider_butt_2{
+	background-color: rgb(75,74,95);
+	top:  118px;
+	left: 232px;
+	z-index: 5;
+}
+
+.box{
+	height: 379px;
+	width: 284px;
+	position: relative;
+	display: block;
+	float: none;
+	overflow: hidden;
+	background-color: rgb(255,249,249);
+	margin: 0px;
+	margin-bottom:25px;
+}
+
+.box img{
+	display: block;
+	height: 285px;
+	width: 282px;
+	margin-left:-1px;
+}
+
+.box .text{
+	height: 94px;
+	width: 282px;
+	background-color: rgb(255,255,255);
+	margin-top: -2px;
+}
+
+.sale{
+	height: 51px;
+	width: 51px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	background-color: rgb(75,74,95);
+	border-radius: 50px;
+	font-family: "KalingaBold","Times New Roman",serif;
+	font-size: 12px;
+	color: rgb(0,224,190);
+	padding: 21px 12px 21px 10px;
+	line-height: 13px;
+	z-index: 1;
+}
+
+.new{
+	height: 25px;
+	width: 62px;
+	position: absolute;
+	top: 8px;
+	left: 223px;
+	padding: 6px 7px 7px 20px;
+	font-family: "KalingaBold","Times New Roman",serif;
+	font-size: 14px;
+	color: rgb(254,255,255);
+	line-height: 14px;
+	background-image: url("/fashion/img/sprite.png");
+	background-position: 0 -1313px;
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+
+.stars{
+	height: 12px;
+	width: 59px;
+	margin-top: 15px;
+	margin-left: 20px;
+}
+
+.stars div{
+	float: left;
+	height: 11px;
+	width: 10px;
+	margin-right: 1px;
+}
+
+.stars_bottom{
+	margin-left: 13px;
+}
+
+.addlayer{
+	height: 285px;
+	width: 280px;
+	overflow: hidden;
+	background-color: rgb(47,47,47);
+	opacity: 0.8;
+	z-index: 0;
+}
+
+.square{
+	height: 42px;
+	width: 44px;
+	position: absolute;
+	top: 244px;
+	z-index: 1;
+}
+
+.add{
+	left: 192px;
+	background-color: rgb(0,216,229);
+}
+
+.favor{
+	left: 236px;
+	background-color: rgb(0,216,229);
+}
+
+.add_cart_layer{
+	display: block;
+	height: 42px;
+	width: 44px;
+	background-image: url("/fashion/img/sprite.png");
+	background-position: 0 -870px;
+	background-repeat: no-repeat;
+	margin-top: 10px;
+	margin-left: 9px;
+}
+
+.add_favor{
+	display: block;
+	height: 42px;
+	width: 44px;
+	background-image: url("/fashion/img/sprite.png");
+	background-position: 0 -924px;
+	background-repeat: no-repeat;
+	margin-top: 12px;
+	margin-left: 11px;
+}
+
+.arrow_right_2{
+	
+}
+
+.content-3 .part2 .title{
+	float: left;
+	margin-top: 20px;
+	margin-left: 19px;
+	font-size: 18px;
+	line-height: 20px;
+}
+
+.content-3 .part2 .price{
+	float: right;
+	margin-top: 20px;
+	margin-right: 12px;
+	font-size: 22px;
+	color: rgb(0,224,190);
+}
+
+/* Content-4
+---------------------------------------------------------- */
+
+.content-4{
+	display: none;
+	margin: 0 auto;
+}
+
+/* Content-5
+---------------------------------------------------------- */
+
+.content-5{
+	width:100%;
+	margin: 20px auto 0;
+	overflow: hidden;
+}
+
+.content-5 img{
+	display: block;
+	width:300px;
+	margin: 0;
+}
+
+.content-5 .title{
+	height: 42px;
+	width: 130px;
+	margin: 0 auto;
+	font-size: 17px;
+	line-height: 20px;
+}
+
+.content-5 .line{
+	width: 15%;
+	height: 3px;
+	margin: 5px auto 0;
+}
+
+.newBoxes{
+	width: 305px;
+	margin:0 auto;
+}
+
+.boxes{
+	height: 379px;
+	width: 305px;
+	margin: 20px auto 0;
+	position: relative;
+	float: none;
+}
+
+.boxes img{
+	height: 285px;
+	width:284px;
+	margin:12px auto 0;
+}
+
+.title_good{
+	float: left;
+	margin-top: 21px;
+	margin-left: 12px;
+	font-family: "KalingaBold","Times New Roman",serif;
+	font-size: 18px;
+	color: rgb(101,101,101);
+}
+
+.price_good{
+	float: right;
+	margin-top: 21px;
+	margin-right: 13px;
+	font-family: "KalingaBold","Times New Roman",serif;
+	font-size: 22px;
+	color: rgb(0,224,190);
+}
+
+.content-5 .text{
+	height: 96px;
+	width: 305px;
+}
+
+.content-5 .stars{
+	height: 12px;
+	width: 59px;
+}
+
+
+
+.none{
+	display: none;
+}
+
+/* Content-6, Content-7
+---------------------------------------------------------- */
+
+.content-6, .content-7{
+	display: none;
+}
+
+/*Footer
+---------------------------------------------------------- */
+
+.footer-1{
+	display: none;
+}
+
+.info, .my_acc, .categ, .help{
+	display: none;
+}
+
+.footer-2-norm{
+	height: 325px;
+	width: 100%;
+}
+
+.footer-2 h1{
+	font-size: 18px;
+	margin-top:0;
+}
+
+.contacts{
+	width:290px;
+	margin: 0;
+	margin:0 auto;
+}
+
+.footer-2-col{
+	float:none;
+	padding-top:50px;
+}
+
+.footer-3{
+	height:auto;
+}
+
+.footer-3-norm{
+	height:100px;
+	width: 100%;
+}
+
+.payment{
+	display: none;
+}
+
+.copyright{
+	float:none;
+}
+
+.copyright .text{
+	width:290px;
+	margin:0;
+	margin:0 auto;
+	padding-top:23px;
+}
+
+
+}
+
+@media all and (max-width: 350px)
+{
+.logo{
+	width: 59%;
+}
+
+.my_cart{
+	width: 29%;
+}
+
+.buy{
+	width: 12%;
+	
+}
+
+.headbox1.callme{
+	border:none;
+	width:0px;
+	width: 65%;
+}
+
+

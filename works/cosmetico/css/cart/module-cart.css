@@ -1,0 +1,26 @@
+/* CONTENT
+-----------------------------------------------------------------------------*/
+
+.crumbs>*{
+	float:left;
+}
+
+.product-table-header>*{
+	float:left;
+}
+
+.product a{
+	display:block;
+}
+
+.product>*{
+	float:left;
+}
+
+.quantity-enter>*{
+	float:left;
+}
+
+.continue div{
+	float:right;
+}

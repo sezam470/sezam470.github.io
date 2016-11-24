@@ -1,0 +1,10 @@
+<div class='quantity_repeat' ng-repeat='i in amounts'>
+	<div class='text'>Quantity</div>
+	<div class='number'>
+		<div class='minus' ng-class='{"minus_done":i.addCart}' ng-click='click_minus($index)'><div class='line'></div></div>
+		<input class='amount' value='1' ng-model='amount' ng-init='amount=1'/>
+		<div class='plus' ng-class='{"plus_done":i.addCart}' ng-click='click_plus($index)'>+</div>
+	</div>
+	<div class='add_to_cart' ng-class='{"add_to_cart_done":i.addCart}' ng-click='disableClick_addCart($index)' ng-disabled='i.isDisabled_addcart'>ADD TO CART</div>
+	<div class='clear'></div>
+</div>
